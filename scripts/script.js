@@ -24,6 +24,7 @@ function init(){
     
     //Starts preview Timer
     document.querySelector('.progress-bar').style.transition = 'width ' + PREVIEW_TIME_MS + 'ms linear';
+    document.querySelector('.progress-bar').style.width = '100%';
     document.querySelector('.progress-bar').style.width = '0%';
     setTimeout(() => {
         hideActiveSquares();
