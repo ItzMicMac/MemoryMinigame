@@ -1,0 +1,118 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    /* Optional: Add border to see the grid */
+    justify-content: center;
+}
+
+.grid-container{
+    padding: 30px;
+    
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: #3a3b3d;
+    width: 500px;
+    
+    
+    margin: auto;
+}
+
+.square {
+    margin: auto;
+    width: 19%; /* 100% / 5 columns */
+    height: 19%; /* 100% / 5 rows */
+    box-sizing: border-box;
+    border: 1px solid #000; /* Optional: Add border to see the grid items */
+    border-radius: 3px;
+    background-color: #46464d;
+}
+
+.active{
+    background-color: #41f72d;
+}
+.incorrect{
+    background-color: #f72d2d;
+}
+
+h1 {
+    margin: auto;
+    width: 600px;
+    padding-bottom: 30px;
+    color: white;
+}
+body{
+    background-color: #343536;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px 0;
+    margin-bottom: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.incorrect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 100%;    
+}
+
+.incorrect-bar {
+    width: 30%;
+    height: 15px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #3a3b3d;
+    padding: 10px;
+    border-radius: 5px;
+}
+.slider-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.slider-container input[type="range"] {
+    width: 100%;
+}
+
+body{
+    color: white
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #3a3b3d;
+    border: 2px solid black;
+    z-index: 1000;
+    font-size: xx-large;
+}

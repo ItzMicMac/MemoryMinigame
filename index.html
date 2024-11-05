@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Minigame</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body onload="displayClickToPlay()">
+    
+    <div class="grid-container">
+        <h1>Welcome to the Memory Minigame</h1>
+        <div class="incorrect-container">
+
+        </div>
+        <div class="grid">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+
+    </div>
+    <div class="slider-container">
+        <label for="grid-size-slider">Grid Size: <span id="grid-size-value">5</span></label>
+        <input type="range" id="grid-size-slider" name="grid-size-slider" min="3" max="10" value="5">
+        
+        <br>
+        <label for="tiles-slider">Tiles to Memorize: <span id="tiles-value">5</span></label>
+        <input type="range" id="tiles-slider" name="tiles-slider" min="1" max="20" value="5">
+        
+    </div>
+
+    <script>
+        const gridSizeSlider = document.getElementById('grid-size-slider');
+        const gridSizeValue = document.getElementById('grid-size-value');
+        const tilesSlider = document.getElementById('tiles-slider');
+        const tilesValue = document.getElementById('tiles-value');
+
+        gridSizeSlider.oninput = function() {
+            gridSizeValue.textContent = this.value;
+        }
+
+        tilesSlider.oninput = function() {
+            tilesValue.textContent = this.value;
+        }
+    </script>
+</body>
+</html>
